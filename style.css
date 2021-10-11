@@ -1,0 +1,28 @@
+body {
+  background-color: #202020;
+  color: white;
+  font-size: 30px;
+}
+
+.container {
+  background-color: #aa21ff;
+  width: 300px;
+  min-height: 300px;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* position the div in center */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=style.css.map */
