@@ -1,17 +1,16 @@
 body{
-    background-color: #202020;
-    color: white;
-    font-size: 30px;  
+    margin: 0;
+    padding: 0;
+    text-align: center;
   }
   
   .container{
-    background-color: #aa21ff;
+    background-color: #b90000;
     width: 300px;
     min-height: 300px;
     padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    border-radius: 25px;
     
     /* position the div in center */
     position: absolute;

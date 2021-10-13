@@ -5,13 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>People Counter</title>
+    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- External Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <div class="container">
-        <span class="item">JsCodeLover</span>
-      </div>  
-    
+    <!-- calculator -->
+    <div class="container">    
+        <div class="number" id="num1"></div>
+        <div class="number" id="num2"></div>
+        <br>
+        <button onclick="add()">Add</button>
+        <button onclick="sub()">Subtract</button>
+        <button onclick="multiply()">Multiply</button>
+        <button onclick="divide()">Divide</button>
+        <br>
+        <div id="sum" class="sum">Sum: </div>
+    </div>
 </body>
 <script src="./app.js"></script>
 </html>
