@@ -5,13 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>People Counter</title>
+    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- External Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="container">
-        <span class="item">JsCodeLover</span>
-      </div>  
-    
+        <h1 class="item">People Counter :</h1>
+        <h2 id="countpeeps">0</h2>
+        <button class="button-style" id="increment-btn" onclick="increment()">INCREMENT</button>
+        <button class="button-style" id="save-btn" onclick="saveButton()">SAVE BUTTON</button>
+        <p id="saveEntry" class="saveEntry">Previous entries: </p>
+      </div>   -->
+    <p id="welcome"></p>
+
 </body>
 <script src="./app.js"></script>
 </html>

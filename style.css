@@ -1,28 +1,53 @@
 body {
-  background-color: #202020;
-  color: white;
-  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .container {
-  background-color: #aa21ff;
+  background-color: #000000;
   width: 300px;
   min-height: 300px;
   padding: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: block;
+  border-radius: 25px;
   /* position the div in center */
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+h1 {
+  color: black;
+  font-family: 'Poppins';
+}
+
+h2 {
+  font-size: 3em;
+  font-family: 'Domine', serif;
+  color: white;
+}
+
+.button-style {
+  border-radius: 10px;
+  color: white;
+  background-color: brown;
+  width: 150px;
+  min-height: 50px;
+  font-weight: bold;
+  font-family: 'Poppins';
+}
+
+.saveEntry {
+  font-size: 1.2em;
+  color: white;
+  font-family: 'Poppins';
+}
+
+p {
+  color: red;
+  font-family: 'Poppins';
 }
 /*# sourceMappingURL=style.css.map */
