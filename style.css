@@ -11,10 +11,16 @@ body {
   --white-color: #ffffff;
   --darkBlue-color: #254E70;
   --button-red: #b4324a;
-  --background-color: linear-gradient(to left, #ececec, #ececec, #ececec, #ececec, #ececec);
-  --box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.548);
-  --button-black-hover:rgb(211, 211, 211);
-  --button-gray-hover:rgba(177, 177, 177, 0.966);
+  --background-color: #AEF3E7;
+}
+
+.dark-theme {
+  --bg-color: 	#000000;
+  --border-color: #ffffff;
+  --white-color: #ffffff;
+  --darkBlue-color: #702525;
+  --button-red: #702525;
+  --background-color: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%);
 }
 
 section {
@@ -28,6 +34,7 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: var(--background-color);
 }
 
 .container {
@@ -44,11 +51,26 @@ section {
 }
 
 header {
-  text-align: center;
   color: var(--white-color);
   text-transform: uppercase;
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header img {
+  max-width: 15px;
+  margin-right: 45px;
+  cursor: pointer;
+}
+
+header .title {
+  margin-left: 128px;
 }
 
 .display {
