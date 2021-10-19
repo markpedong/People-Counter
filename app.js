@@ -2,7 +2,7 @@
 let saveEntry = document.getElementById("saveEntry")
 let countpeeps = document.getElementById("countpeeps")
 let count = 0;
-
+let orderedLists = document.getElementById("orderedLists").innerHTML = generate
 
 function increment() {
     count += 1;
@@ -12,7 +12,7 @@ function increment() {
 
 function saveButton (){
     let countStr = count + " - "
-    saveEntry.textContent += countStr;
-    countpeeps.innerText = 0;
+    saveEntry.innerText += countStr;
+    countpeeps.textContent = 0;
     count = 0;
 }

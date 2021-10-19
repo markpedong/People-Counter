@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>People Counter</title>
+    <title>People Counter| Mark Jesson Pedong </title>
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 
@@ -16,14 +16,30 @@
 
 </head>
 <body>
-    <div class="container">
-        <h1 class="item">People Counter :</h1>
-        <h2 id="countpeeps">0</h2>
-        <button class="button-style" id="increment-btn" onclick="increment()">INCREMENT</button>
-        <button class="button-style" id="save-btn" onclick="saveButton()">SAVE BUTTON</button>
-        <p id="saveEntry" class="saveEntry">Previous entries: </p>
-      </div>   -->
-    <p id="welcome"></p>
+    <section>
+        <div class="container">
+            <header>
+                <div class="title">People Counter</div>
+            </header>
+            <div class="display">
+                <div class="counterTag" id="countpeeps">0</div>
+                <div class="peopleTag">People</div>
+            </div>
+            <div class="buttons">
+            <div class="button-style" id="increment-btn" onclick="increment()">INCREMENT</div>
+            <div class="button-style" id="save-btn" onclick="saveButton()">SAVE BUTTON</div>
+            </div>
+            <div class="history">
+                <h1 class="saveEntry">HISTORY</h1>
+                <ol id="orderedLists">
+                
+                </ol>
+                <p id="saveEntry"></p>
+                
+            </div>
+        </div>    
+        
+    </section>
 
 </body>
 <script src="./app.js"></script>
