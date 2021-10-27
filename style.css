@@ -6,21 +6,15 @@ body {
 }
 
 :root {
-  --bg-color: #37718E;
-  --border-color: #00DFFF;
-  --white-color: #ffffff;
-  --darkBlue-color: #254E70;
-  --button-red: #b4324a;
-  --background-color: #AEF3E7;
+  --bg-color: white;
+  --border-color: black;
+  --bg-image: url("https://www.transparenttextures.com/patterns/absurdity.png");
 }
 
 .dark-theme {
-  --bg-color: 	#000000;
-  --border-color: #ffffff;
-  --white-color: #ffffff;
-  --darkBlue-color: #702525;
-  --button-red: #702525;
-  --background-color: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%);
+  --bg-color: rgb(0, 0, 0);
+  --border-color: rgb(255, 255, 255);
+  --bg-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
 }
 
 section {
@@ -34,83 +28,84 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: var(--background-color);
+  background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .container {
+  border: 4px solid var(--border-color);
+  background-color: var(--bg-color);
+  border-radius: 20px;
   width: 100%;
   height: auto;
   max-width: 450px;
-  background-color: var(--bg-color);
-  border-radius: 3.5em;
-  border-style: solid;
-  border-color: var(--border-color);
-  border-width: 10px;
-  overflow: hidden;
-  padding-bottom: 20px;
 }
 
 header {
-  color: var(--white-color);
-  text-transform: uppercase;
-  font-size: 20px;
-  font-family: 'Montserrat', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: var(--border-color);
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 900;
+  padding-top: 20px;
 }
 
-header img {
-  max-width: 15px;
-  margin-right: 45px;
+.title {
+  margin-left: 30px;
+}
+
+.img {
+  max-width: 19px;
   cursor: pointer;
 }
 
-header .title {
-  margin-left: 128px;
+.container {
+  padding: 0px;
+  margin: 0px;
 }
 
 .display {
-  width: 90%;
   text-align: center;
-  background-color: var(--darkBlue-color);
-  border-radius: 3em;
-  margin-left: auto;
-  margin-right: auto;
+  padding-bottom: 50px;
 }
 
 .display .counterTag {
-  font-size: 140px;
-  color: white;
+  font-size: 100px;
+  color: var(--border-color);
   font-family: 'Poppins', sans-serif;
-  padding: 50px 0 0 0;
+  padding-top: 50px;
+  line-height: 100px;
+  font-weight: 200;
 }
 
 .display .peopleTag {
   font-size: 20px;
-  color: white;
+  font-weight: 500;
+  color: var(--border-color);
   font-family: 'Montserrat', sans-serif;
-  padding: 0 0 50px 0;
+  line-height: 20px;
 }
 
 .buttons {
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 50px 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
 }
 
 .buttons .button-style {
   border-radius: 10px;
-  color: white;
-  background-color: var(--button-red);
-  width: 150px;
+  border: 2px solid var(--border-color);
+  color: var(--border-color);
+  width: auto;
   min-height: 50px;
   font-weight: bold;
   font-family: 'Poppins';
@@ -124,26 +119,98 @@ header .title {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  margin: 5px;
 }
 
 .history {
-  width: 70%;
+  width: 80%;
+  min-width: auto;
   text-align: center;
-  background-color: var(--darkBlue-color);
+  height: 100px;
+  border: 4px solid var(--border-color);
   border-radius: 1.5em;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .history .saveEntry {
   font-size: 1.5em;
-  color: white;
+  color: var(--border-color);
+  font-family: 'Poppins';
+  line-height: 20px;
+}
+
+.history .dataEntry {
+  color: var(--border-color);
   font-family: 'Poppins';
 }
 
-.history p {
-  color: white;
-  font-family: 'Poppins';
+@media (min-width: 269px) and (max-width: 352px) {
+  .title {
+    margin-left: 0px;
+    font-size: 25px;
+  }
+  .img {
+    max-width: 15px;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 262px) and (max-width: 268px) {
+  .title {
+    margin-left: 0px;
+    font-size: 23px;
+  }
+  .img {
+    max-width: 14px;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 210px) and (max-width: 261px) {
+  .title {
+    margin-left: 0px;
+    font-size: 18px;
+  }
+  .img {
+    max-width: 11px;
+    cursor: pointer;
+  }
+  .saveBtn {
+    font-size: 13px;
+  }
+  .resetBtn {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 209px) {
+  .title {
+    margin-left: 0px;
+    font-size: 18px;
+  }
+  .img {
+    max-width: 11px;
+    cursor: pointer;
+  }
+  .saveBtn {
+    font-size: 13px;
+  }
+  .resetBtn {
+    font-size: 13px;
+  }
+  .buttons {
+    margin: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .buttons .button-style {
+    width: 90px;
+    min-height: 50px;
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

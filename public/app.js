@@ -1,6 +1,6 @@
 // Increment Function and Save Function
-const saveEntry = document.getElementById("saveEntry")
-const countpeeps = document.getElementById("countpeeps")
+let saveEntry = document.getElementById("saveEntry")
+let countpeeps = document.getElementById("countpeeps")
 let count = 0;
 
 function increment(){
@@ -13,18 +13,6 @@ function saveButton (){
     saveEntry.innerText += countStr;
     countpeeps.textContent = 0;
     count = 0;
-}
-
-function decrement() {
-  count -= 1
-  countpeeps.innerText = count
-}
-
-function resetButton() {
-  count = 0;
-  countpeeps.innerText = 0
-
-  saveEntry.innerText = ""
 }
 
 // Dark Theme

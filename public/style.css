@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #37718E;
+  --border-color: #00DFFF;
+  --white-color: #ffffff;
+  --darkBlue-color: #254E70;
+  --button-red: #b4324a;
+  --background-color: #AEF3E7;
+}
+
+.dark-theme {
+  --bg-color: 	#000000;
+  --border-color: #ffffff;
+  --white-color: #ffffff;
+  --darkBlue-color: #702525;
+  --button-red: #702525;
+  --background-color: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%);
+}
+
+section {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: var(--background-color);
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  max-width: 450px;
+  background-color: var(--bg-color);
+  border-radius: 3.5em;
+  border-style: solid;
+  border-color: var(--border-color);
+  border-width: 10px;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: var(--white-color);
+  padding-top: 10px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: 'Montserrat',sans-serif;
+}
+
+.title {
+  margin-left: 70px;
+}
+
+.img {
+  max-width: 15px;
+  margin-right: 0px;
+  cursor: pointer;
+}
+
+.display {
+  width: 90%;
+  text-align: center;
+  background-color: var(--darkBlue-color);
+  border-radius: 3em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.display .counterTag {
+  font-size: 140px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  padding: 50px 0 0 0;
+}
+
+.display .peopleTag {
+  font-size: 20px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 0 50px 0;
+}
+
+.buttons {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 50px 0px;
+}
+
+.buttons .button-style {
+  border-radius: 10px;
+  color: white;
+  background-color: var(--button-red);
+  width: 150px;
+  min-height: 50px;
+  font-weight: bold;
+  font-family: 'Poppins';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.history {
+  width: 70%;
+  text-align: center;
+  background-color: var(--darkBlue-color);
+  border-radius: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.history .saveEntry {
+  font-size: 1.5em;
+  color: white;
+  font-family: 'Poppins';
+}
+
+.history p {
+  color: white;
+  font-family: 'Poppins';
+}
+
+@media (min-width: 271px) and (max-width: 348px) {
+  .title {
+    margin-left: 45px;
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
